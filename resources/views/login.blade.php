@@ -13,7 +13,6 @@
       <div class="col-md-6 p-5 bg-white">
         <h3 class="mb-4">Selamat Datang!</h3>
 
-        {{-- Tampilkan alert jika ada pesan sukses atau error --}}
         @if(session('success'))
           <x-alert type="success" :message="session('success')" />
         @endif
